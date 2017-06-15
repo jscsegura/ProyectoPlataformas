@@ -29,8 +29,9 @@ struct eightway_512{
 };
 
 uint64_t memoryToBinary(char memory[]);
-void simulateAssoc(struct asociativo_512 *cache, uint64_t memoryAccessed);
-void simulateDirect(struct directo_512 *cache, uint64_t memoryAccessed);
-void simulate8way(struct eightway_512 *cache, uint64_t memoryAccessed);
+void simulateAssoc(struct asociativo_512 *cache, uint64_t MemoryAddress);
+void simulateDirect(struct directo_512 *cache, uint64_t MemoryAddress);
+void simulate8way(struct eightway_512 *cache, uint64_t MemoryAddress);
 void updateCache(struct asociativo_512 *cache, uint64_t leading_bits);
-void updateCache2(struct eightway_512 *cache, uint64_t set, uint64_t tag);
+void BringFromMemoryNWay(struct eightway_512 *cache, uint64_t set, uint64_t tag);
+void casoCincoDoce(char* filename, char* tipo);
