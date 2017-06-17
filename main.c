@@ -28,22 +28,22 @@ int main(int argc, char *argv[])
   casoDiezVeinte(filename, tipo);
 
   }
-  //
-  // if(strncmp(argv[2], caso2048, 5)==0){
-  //
-  // char* filename = argv[3];
-  // char* tipo = argv[1];
-  // casoCincoDoce(filename, tipo);
-  //
-  // }
-  //
-  // if(strncmp(argv[2], caso4096, 5)==0){
-  //
-  // char* filename = argv[3];
-  // char* tipo = argv[1];
-  // casoCincoDoce(filename, tipo);
-  //
-  // }
+
+  if(strncmp(argv[2], caso2048, 5)==0){
+
+  char* filename = argv[3];
+  char* tipo = argv[1];
+  casoVeinteCuarenta(filename, tipo);
+
+  }
+
+  if(strncmp(argv[2], caso4096, 5)==0){
+
+  char* filename = argv[3];
+  char* tipo = argv[1];
+  casoCuarentaNoventa(filename, tipo);
+
+  }
 
 
 }

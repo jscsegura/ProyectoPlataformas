@@ -14,4 +14,5 @@
 uint64_t memoryToBinary(char memory[]);
 void casoCincoDoce(char* filename, char* tipo);
 void casoDiezVeinte(char* filename, char* tipo);
-// void casoDiezVeinte(char* filename, char* tipo);
+void casoVeinteCuarenta(char* filename, char* tipo);
+void casoCuarentaNoventa(char* filename, char* tipo);
