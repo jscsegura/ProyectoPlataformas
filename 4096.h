@@ -1,4 +1,7 @@
-
+/** @file 4096.h
+ *  @brief Cache 4096
+ *  @details Contiene los structs y llamados a funciones del caché de tamaño 4096.
+ */
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>

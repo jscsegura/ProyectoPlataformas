@@ -1,3 +1,8 @@
+/** @file 1024.c
+ *  @brief Cache 1024
+ *  @details Contiene las funciones del caché de tamaño 1024.
+ */
+
 #include"cache.h"
 #include"1024.h"
 

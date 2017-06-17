@@ -1,3 +1,7 @@
+/** @file 512.c
+ *  @brief Cache 512
+ *  @details Contiene las funciones del caché de tamaño 512.
+ */
 #include"cache.h"
 #include"512.h"
 

@@ -1,3 +1,8 @@
+/** @file 4096.c
+ *  @brief Cache 4096
+ *  @details Contiene las funciones del caché de tamaño 4096.
+ */
+
 #include"cache.h"
 #include"4096.h"
 

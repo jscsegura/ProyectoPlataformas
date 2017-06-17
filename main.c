@@ -1,3 +1,10 @@
+/** @file main.c
+ *  @brief Es el main del programa. Identifica los argumentos de entrada y los pasa al respectivo archivo.
+ *
+ *  @details El archivo toma los argumentos de entrada e identifica si estos son 512, 1024, 2048 y 4096, para posteriormente
+ pasarlos al archivo correspondiente.
+ */
+
 #include"cache.h"
 
 int main(int argc, char *argv[])

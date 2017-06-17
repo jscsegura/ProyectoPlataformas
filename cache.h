@@ -1,7 +1,7 @@
-/** @file lista.h
- *  @brief ...
+/** @file cache.h
+ *  @brief Este es el header del cache
+ *  @details Este es el header del cache, en donde se redirigen los parámetros a las funciones según el tamaño del caché.
  *
- *  @details ....
  */
 
 

@@ -1,3 +1,12 @@
+/** @file cache.c
+ *  @brief Inicialización del caché y lectura de direcciones
+ *  @details Este archivo contiene las funciones que, en función del tamaño del caché, inicializan los structs
+ y también hacen la lectura de las direcciones en el archivo que se especificó en los argumentos. Finalmente,
+ imprime los resultados obtenidos.
+ */
+
+
+
 #include"cache.h"
 #include"512.h"
 #include"1024.h"

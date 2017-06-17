@@ -1,3 +1,8 @@
+/** @file 2048.c
+ *  @brief Cache 2048
+ *  @details Contiene las funciones del caché de tamaño 2048.
+ */
+
 #include"cache.h"
 #include"2048.h"
 
