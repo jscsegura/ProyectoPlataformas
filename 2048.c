@@ -24,8 +24,8 @@ void simulateAssoc2048(struct asociativo_2048 *cache, uint64_t MemoryAddress)
 void simulateDirect2048(struct directo_2048 *cache, uint64_t MemoryAddress)
 {
 	uint64_t mask = 0xff;
-	uint64_t cache_row = (MemoryAddress >> 6) & mask;
-	uint64_t tag = MemoryAddress >> 15;
+	uint64_t cache_row = (MemoryAddress >> 8) & mask;
+	uint64_t tag = MemoryAddress >> 17;
 
 	if (cache->lines[cache_row] == tag){
 		cache->cache_hits +=1;
@@ -38,8 +38,8 @@ void simulateDirect2048(struct directo_2048 *cache, uint64_t MemoryAddress)
 void simulate8way2048(struct eightway_2048 *cache, uint64_t MemoryAddress)
 {
 	uint64_t mask = 0x3f;
-	uint64_t cache_set = (MemoryAddress >> 6) & mask;
-	uint64_t tag = MemoryAddress >> 12;
+	uint64_t cache_set = (MemoryAddress >> 4) & mask;
+	uint64_t tag = MemoryAddress >> 13;
 
 	for(int i = 0; i <8; i++){
 		if(cache->sets[cache_set][i] == tag){

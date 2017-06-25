@@ -38,7 +38,7 @@ void simulate8way512(struct eightway_512 *cache, uint64_t MemoryAddress)
 {
 	uint64_t mask = 0x3f;
 	uint64_t cache_set = (MemoryAddress >> 6) & mask;
-	uint64_t tag = MemoryAddress >> 12;
+	uint64_t tag = MemoryAddress >> 15;
 
 	for(int i = 0; i <8; i++){
 		if(cache->sets[cache_set][i] == tag){

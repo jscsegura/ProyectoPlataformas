@@ -24,8 +24,8 @@ void simulateAssoc1024(struct asociativo_1024 *cache, uint64_t MemoryAddress)
 void simulateDirect1024(struct directo_1024 *cache, uint64_t MemoryAddress)
 {
 	uint64_t mask = 0xff;
-	uint64_t cache_row = (MemoryAddress >> 6) & mask;
-	uint64_t tag = MemoryAddress >> 15;
+	uint64_t cache_row = (MemoryAddress >> 7) & mask;
+	uint64_t tag = MemoryAddress >> 16;
 
 	if (cache->lines[cache_row] == tag){
 		cache->cache_hits +=1;
@@ -38,8 +38,8 @@ void simulateDirect1024(struct directo_1024 *cache, uint64_t MemoryAddress)
 void simulate8way1024(struct eightway_1024 *cache, uint64_t MemoryAddress)
 {
 	uint64_t mask = 0x3f;
-	uint64_t cache_set = (MemoryAddress >> 6) & mask;
-	uint64_t tag = MemoryAddress >> 12;
+	uint64_t cache_set = (MemoryAddress >> 5) & mask;
+	uint64_t tag = MemoryAddress >> 14;
 
 	for(int i = 0; i <8; i++){
 		if(cache->sets[cache_set][i] == tag){

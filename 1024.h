@@ -1,4 +1,7 @@
-
+/** @file 1024.h
+ *  @brief Cache 1024
+ *  @details Contiene los structs y llamados a funciones del caché de tamaño 1024.
+ */
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>

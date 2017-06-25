@@ -1,4 +1,7 @@
-
+/** @file 512.h
+ *  @brief Cache 512
+ *  @details Contiene los structs y llamados a funciones del caché de tamaño 512.
+ */
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>

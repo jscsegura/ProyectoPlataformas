@@ -1,4 +1,7 @@
-
+/** @file 2048.h
+ *  @brief Cache 2048
+ *  @details Contiene los structs y llamados a funciones del caché de tamaño 2048.
+ */
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>

@@ -24,8 +24,8 @@ void simulateAssoc4096(struct asociativo_4096 *cache, uint64_t MemoryAddress)
 void simulateDirect4096(struct directo_4096 *cache, uint64_t MemoryAddress)
 {
 	uint64_t mask = 0xff;
-	uint64_t cache_row = (MemoryAddress >> 6) & mask;
-	uint64_t tag = MemoryAddress >> 15;
+	uint64_t cache_row = (MemoryAddress >> 9) & mask;
+	uint64_t tag = MemoryAddress >> 18;
 
 	if (cache->lines[cache_row] == tag){
 		cache->cache_hits +=1;
@@ -38,7 +38,7 @@ void simulateDirect4096(struct directo_4096 *cache, uint64_t MemoryAddress)
 void simulate8way4096(struct eightway_4096 *cache, uint64_t MemoryAddress)
 {
 	uint64_t mask = 0x3f;
-	uint64_t cache_set = (MemoryAddress >> 9) & mask;
+	uint64_t cache_set = (MemoryAddress >> 3) & mask;
 	uint64_t tag = MemoryAddress >> 12;
 
 	for(int i = 0; i <8; i++){
